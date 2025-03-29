@@ -1,0 +1,55 @@
+@include tablet {
+  .feedback{
+
+    &-inner{
+      gap:0;
+      img{
+        display: none;
+      }
+    }
+    &-content{
+      max-width: none;
+    }
+  }
+}
+@include mobile{
+  .feedback{
+    padding: 40px 0;
+
+    &-content{
+      h3{
+        margin-bottom: 8px;
+      }
+    }
+    &-text{
+      font: $default-font-text-mobile;
+    }
+    &-form {
+      input {
+        font: $default-font-text-mobile;
+        padding: 14px;
+      }
+      textarea{
+        font: $default-font-text-mobile;
+        padding: 14px;
+      }
+    }
+    &-bottom{
+      flex-direction: column;
+      gap: 16px;
+      align-items: start;
+
+      button{
+        @extend .blue-button;
+        @include padding-button(14px,24px);
+        &:hover{
+          padding: 12px 24px 16px 24px;
+        }
+        &:active{
+          @include padding-button(14px,24px);
+        }
+      }
+    }
+  }
+
+}

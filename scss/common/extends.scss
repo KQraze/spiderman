@@ -1,0 +1,43 @@
+.default-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: $default-font-medium;
+  border-radius: 16px;
+  transition: all 0.2s ease-in-out;
+
+  &:hover{
+    box-shadow: 0 24px 24px 0 rgba(80, 93, 236, 0.25);
+  }
+}
+
+.blue-button{
+  @extend .default-button;
+  color: $main-white;
+  background: $color-blue;
+  &:hover{
+    background: $hover-blue;
+    box-shadow: 0 24px 24px 0 rgba(80, 93, 236, 0.25);
+  }
+  &:active{
+    box-shadow: 0 8px 24px 0 rgba(60, 73, 221, 0.1);
+    background: $inactive-blue;
+  }
+}
+.white-button{
+  @extend .default-button;
+  color: $color-blue;
+  background: $main-white;
+  &:hover{
+    box-shadow: 0 24px 24px 0 rgba(80, 93, 236, 0.25);
+  }
+  &:active{
+    box-shadow: 0 8px 24px 0 rgba(60, 73, 221, 0.1);
+  }
+}
+
+@include mobile {
+  .default-button {
+    font: $default-font-medium-mobile;
+  }
+}

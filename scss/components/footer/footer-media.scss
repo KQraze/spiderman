@@ -1,0 +1,19 @@
+@include mobile{
+  .footer{
+    padding: 16px 0;
+    &-inner{
+      font: $default-font-text-mobile;
+    }
+    &-info{
+      gap: 8px;
+      max-width: 168px;
+      p{
+        font: $table-text-mobile;
+      }
+      &-up{
+        height: 19px;
+      }
+    }
+
+  }
+}

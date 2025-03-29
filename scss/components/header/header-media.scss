@@ -1,0 +1,63 @@
+@include tablet {
+  .header{
+    &-burger{
+      display: inherit;
+      padding: 8px;
+    }
+    &-logo{
+      display: flex;
+      align-items: center;
+      gap: 16px;
+
+    }
+    &-nav{
+      display: none;
+    }
+    &-help{
+      p{
+        display: none;
+      }
+    }
+  }
+}
+@include mobile {
+  .header{
+    &-inner{
+      padding: 12px 0;
+    }
+    &-help{
+      a{
+        display: none;
+      }
+      img{
+        display: inherit;
+      }
+    }
+  }
+  .burger-menu{
+    max-width: 359px;
+    padding: 40px 0;
+    left: -200%;
+    &.active{
+      top: 64px;
+    }
+
+    &__inner{
+      h4{
+        margin-bottom: 24px;
+      }
+    }
+    &__nav{
+      gap: 16px;
+      font: $font-h2-mobile;
+      margin-bottom: 271px;
+
+      & a:nth-child(1){
+        color: $color-blue;
+      }
+    }
+    p{
+      font: $font-h2-mobile;
+    }
+  }
+}

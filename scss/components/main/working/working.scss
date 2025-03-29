@@ -1,0 +1,131 @@
+.working{
+  width: 100%;
+  overflow: hidden;
+  animation: backgroundWorking 3s infinite;
+
+
+  &-image{
+    &.animate-scale {
+      animation: scaleChange 1s forwards ease-in-out;
+    }
+  }
+  &-block{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    transition: all 0.5s ease;
+    min-height: 500px;
+  }
+
+  img{
+    width: 628px;
+  }
+  &-background{
+    min-height: 100%;
+    width: 100%;
+    backdrop-filter: blur(240px);
+  }
+
+  &-inner{
+    display: flex;
+    flex-direction: column;
+    gap: 2.28rem;
+    padding: 4.4rem 0;
+  }
+  &-content{
+    display: flex;
+    gap: 1.25vw;
+    overflow: hidden;
+    position: relative;
+
+  }
+  &-about{
+    display: flex;
+    flex-direction: column;
+    margin-top: 26px;
+    max-width: 100%;
+    height: 100%;
+    position: relative;
+
+    h3{
+      margin-bottom: 16px;
+    }
+    &__content{
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateX(100%);
+      transition: transform 0.5s ease, opacity 0.5s ease;
+      z-index: 0;
+    }
+    &__content_active{
+      opacity: 1;
+      transform: translateX(0);
+      z-index: 1;
+      pointer-events: all;
+    }
+    &__content_right{
+      transform: translateX(100%);
+    }
+    &__content_left{
+      transform: translateX(-100%);
+    }
+  }
+  &-slider{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 30px;
+
+    &__active{
+      font: $default-font-medium;
+      color: $color-blue;
+      background: transparent;
+    }
+    &__disable{
+      font: $default-font-text;
+      color: $main-white;
+      background: transparent;
+      text-shadow: 0 4px 7px 0 rgba(80, 83, 117, 0.25);
+
+      transition: all 0.3s ease-in-out;
+
+      &:hover{
+        color: $hover-blue;
+      }
+    }
+  }
+  &-dash{
+    border: 1px solid var(--main-white);
+    width: 24px;
+    height: 1px;
+    background: $main-white;
+  }
+  &-topic{
+    font: $default-font-medium;
+    color: $color-blue;
+    margin-bottom: 24px;
+  }
+  &-description{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 6.574vh;
+    max-width: 25.72rem;
+    gap: 16px;
+    color: $main-grey;
+    font: $default-font-text;
+  }
+  .working-button{
+    width: 13.72rem;
+    @extend .blue-button;
+    @include padding-button(16px,24px);
+
+    &:hover{
+      padding: 13px 24px 19px 24px;
+    }
+    &:active{
+      @include padding-button(16px,24px);
+    }
+  }
+}

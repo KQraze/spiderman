@@ -1,0 +1,96 @@
+html,body{
+  font-family: $default-font;
+  font-size: 18px;
+  font-weight: 400;
+  background: $background;
+  scroll-behavior: smooth;
+}
+.wrapper {
+  position: relative;
+  min-height: 100%;
+  width: 100%;
+  padding: 24px;
+  overflow: hidden;
+}
+.inner{
+  position: relative;
+  overflow: hidden;
+  min-height: 100%;
+  max-width: 1392px;
+  border-radius:24px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.65);
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+.container{
+  max-width: $content-width;
+  padding: 0 56px;
+  margin: 0 auto;
+  min-height: 100%;
+
+}
+main{
+  display: flex;
+  flex-direction: column;
+  overflow:hidden;
+}
+h1{
+  font: $headline-font;
+  color: $color-blue;
+}
+h2{
+  font: $font-h2;
+  color: $main-black;
+}
+h3{
+  font: $font-h3;
+  color: $main-black;
+}
+h4{
+  font: $font-h4;
+  color: $main-black;
+}
+
+.input,.input-placeholder{
+  caret-color:$hover-blue;
+  transition: all 0.3s ease-in-out;
+}
+.input:hover {
+  box-shadow: 0 8px 20px 0 rgba(94, 84, 160, 0.25);
+
+  & .input-placeholder::placeholder{
+    color: $hover-blue;
+  }
+}
+.input:focus{
+  box-shadow: 0 8px 20px 0 rgba(94, 84, 160, 0.25);
+}
+
+.input-placeholder:hover::placeholder{
+  color: $hover-blue;
+}
+@include mobile{
+  .container{
+    padding: 0 20px;
+  }
+  .wrapper {
+    padding: 8px;
+  }
+  h1{
+    font: $headline-font-mobile;
+  }
+  h2{
+    font: $font-h2-mobile;
+  }
+  h3{
+    font: $font-h3-mobile;
+  }
+  h4{
+    font: $font-h4-mobile;
+  }
+}
+

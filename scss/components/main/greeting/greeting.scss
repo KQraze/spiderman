@@ -1,0 +1,92 @@
+.greeting{
+  overflow: hidden;
+  width: 100%;
+
+
+  animation: backgroundGreeting 3s infinite;
+  &-img{
+    width: 646px;
+    height: 502px;
+  }
+  &-background{
+    min-height: 100%;
+    width: 100%;
+    backdrop-filter: blur(240px);
+  }
+  &-inner{
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 0;
+  }
+  &-content{
+    margin-top: 2.2rem;
+  }
+  h2{
+    margin-bottom: 2.2rem;
+  }
+  form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 16px;
+    max-width: 25.8rem;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 8px 8px 8px 16px;
+    margin-bottom: 16px;
+
+    &:focus-within {
+      box-shadow: 0 8px 20px 0 rgba(94, 84, 160, 0.25);
+    }
+
+    input{
+      background: transparent;
+      font: $default-font-text;
+      align-items: center;
+    }
+
+    button{
+      @extend .white-button;
+      @include padding-button(12px,24px);
+      &:hover{
+        padding: 10px 24px 14px 24px;
+      }
+      &:active{
+        @include padding-button(12px,24px);
+      }
+    }
+  }
+  &-warning{
+    margin:0 0 126px 8px;
+    max-width: 19.67rem;
+    font: $description-font-text;
+    color: $dark-grey;
+
+    a{
+      color: $hover-blue;
+    }
+  }
+  &-wheeldown{
+    div{
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      font: $table-text;
+      color: $main-white;
+      transition: all 0.3s ease-in-out ;
+
+      & rect, path {
+        transition: all 0.3s ease-in-out;
+      }
+
+      &:hover{
+        color: $hover-blue;
+
+        & rect,path{
+          stroke:$hover-blue;
+        }
+      }
+    }
+
+
+  }
+}

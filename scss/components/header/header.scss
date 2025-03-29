@@ -1,0 +1,138 @@
+.header{
+  width: 100%;
+  background: $main-white;
+  border-radius: 24px 24px 0 0;
+
+  &-logo{
+    transition: all 0.3s ease-in-out;
+
+    h1 a:hover{
+      color: $hover-blue;
+    }
+    h1 a:active{
+      color: $inactive-blue;
+    }
+  }
+  &-burger{
+    display: none;
+  }
+
+  &-inner{
+    @include flex(space-between,center);
+    padding: 16px 0;
+  }
+  &-menu{
+    display: flex;
+    gap: 5vw;
+  }
+  &-nav{
+    display: flex;
+    font: $default-font-text;
+    align-items: center;
+    gap: 1.8vw;
+    color: $main-grey;
+    transition: all 0.9s ease-in-out;
+
+    a:hover{
+      color: $hover-blue
+    }
+    a:active{
+      color: $inactive-blue
+    }
+  }
+  &-help{
+    display: flex;
+    gap: 16px;
+    @include flex(center,center);
+
+    img{
+      display: none;
+    }
+    p{
+      text-align: center;
+      color: $main-grey;
+      font: $default-font-text;
+    }
+    a{
+      @extend .blue-button;
+      @include padding-button(12px,24px);
+      &:hover{
+        padding: 10px 24px 14px 24px;
+      }
+      &:active{
+        @include padding-button(12px,24px);
+      }
+    }
+  }
+}
+.language-blue{
+  font: $default-font-medium;
+  color: $color-blue;
+  cursor: pointer;
+}
+.language-default{
+  color: $main-grey;
+  font: $default-font-text;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+
+  &:hover{
+    color:$hover-blue ;
+  }
+}
+
+.burger-menu{
+  overflow: hidden;
+  border-radius:0 0 24px 24px;
+  position: absolute;
+  left: -120%;
+  right: 0;
+  z-index: 55;
+  padding: 80px 0;
+  max-width: 720px;
+  background: rgba(255, 255, 255);
+  transition: all 0.5s ease;
+  background: radial-gradient(circle at left, rgba(230, 230, 255) 0%, rgba(255, 255, 255) 60%, rgba(255, 255, 255) 100%);
+  &.active{
+    display: block;
+    left: 0;
+    top: 80px;
+  }
+  &__inner{
+    display: flex;
+    flex-direction: column;
+
+    h4{
+      color: $main-grey;
+      margin-bottom: 40px;
+    }
+    p{
+      font: $font-h2;
+      color: $main-grey;
+    }
+  }
+  &__nav{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    font: $font-h2;
+    margin-bottom: 156px;
+
+    & a{
+      transition: color 0.3s ease;
+    }
+    & a:hover{
+      color: $dark-grey;
+    }
+
+    & a:nth-child(1){
+      color: $color-blue;
+    }
+  }
+  .language-default{
+    font: $font-h2;
+  }
+  .language-blue{
+    font: $font-h2;
+  }
+}

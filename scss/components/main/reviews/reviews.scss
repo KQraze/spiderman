@@ -1,0 +1,134 @@
+.reviews{
+  width: 100%;
+  overflow: hidden;
+  animation: backgroundReviews 3s infinite;
+
+  &-group{
+    display: none;
+    margin-top: 32px;
+    font: $group-text;
+    text-align: center;
+    color: $main-grey;
+  }
+  &-background{
+    min-height: 100%;
+    width: 100%;
+    backdrop-filter: blur(240px);
+  }
+  &-inner{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 80px 0;
+  }
+  &-block{
+    width: 100%;
+    min-height: 31.1rem;
+    position: relative;
+    transition: all .5s ease-in-out;
+
+    &.active {
+
+      display: grid;
+      grid-template: repeat(2,1fr) / repeat(2,1fr);
+      gap: 24px;
+
+      .review{
+        position: relative;
+        transform: none;
+        max-width: 100%;
+        z-index: 1;
+        transition: all 0.5s ease-in-out;
+      }
+      .reviews-button{
+        display: none;
+      }
+    }
+
+    button{
+      @extend .white-button;
+      @include padding-button(16px,24px);
+      position: absolute;
+      bottom: 0;
+      right: 0;
+
+      &:hover{
+        padding: 14px 24px 18px 24px;
+      }
+      &:active{
+        @include padding-button(16px,24px);
+      }
+    }
+  }
+
+  &-second{
+    z-index: 3;
+    transform: translate(326px, 0);
+
+  }
+  &-first{
+    z-index: 1;
+    transform: translate(0, 56px)
+
+  }
+  &-fourth{
+    z-index: 0;
+    transform: translate(164px, 317px);
+  }
+  &-third{
+    z-index: 1;
+    transform: translate(650px, 195px);
+  }
+}
+.review{
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  max-width: 628px;
+  border: solid 1px $main-white;
+  background: #EAE7F4;
+  position: absolute;
+  min-height: 240px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+
+
+  &-topic{
+    display: flex;
+    @include flex(space-between,center);
+    height: 96px;
+    padding: 16px 24px 16px 16px;
+    border-radius: 16px 16px 0 0;
+    background: rgba(255, 255, 255, 0.5);
+
+    div{
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      img{
+        border-radius: 32px;
+      }
+    }
+    p{
+      font: $default-font-text;
+      color: $main-grey;
+    }
+
+  }
+
+  &-description{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px 24px;
+    font: $default-font-text;
+    color: $main-grey;
+
+  }
+  &-stars{
+    display: flex;
+    gap: 4px;
+  }
+}
+
+

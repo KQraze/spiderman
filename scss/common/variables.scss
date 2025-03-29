@@ -1,0 +1,38 @@
+$default-font: "Visuelt Pro";
+$content-width: 1392px;
+$color-blue: #4754eb;
+$color-purple: #8633b0;
+$color-pink: #eb478b;
+$color-yellow: #ffdf80;
+$color-orange: #f47b25;
+$background: #f2f2f2;
+$main-white: #ffffff;
+$main-black: #1a1a1a;
+$main-grey: #808080;
+$dark-grey: #595959;
+$main-lt: #d9d9d9;
+$hover-blue: #626eeb;
+$inactive-blue: #3c49dd;
+
+$headline-font: 500 1rem / 135% $default-font;
+$font-h2: 500 3.111rem / 125% $default-font;
+$font-h3: 500 2rem / 112% $default-font;
+$font-h4: 500 1.333rem / 100% $default-font;
+$default-font-text: 400 1rem / 135% $default-font;
+$default-font-medium: 500 1rem / 135% $default-font;
+$table-text: 400 0.889rem / 135% $default-font;
+$description-font-text: 400 0.667rem / 135% $default-font;
+$group-text: 400 1.333rem / 100% $default-font;
+
+
+$headline-font-mobile: 500 0.778rem / 135% $default-font;
+$font-h2-mobile: 500 2rem / 125% $default-font;
+$font-h3-mobile: 500 1.444rem / 125% $default-font;
+$font-h4-mobile: 500 1rem / 125% $default-font;
+$default-font-text-mobile: 400 0.778rem/ 135% $default-font;
+$default-font-medium-mobile: 500 0.778rem / 135% $default-font;
+$table-text-mobile: 400 0.778rem / 135% $default-font;
+$description-font-text-mobile: 400 0.556rem / 135% $default-font;
+
+$breakpoint_md: 1200px;
+$breakpoint_sm: 670px;

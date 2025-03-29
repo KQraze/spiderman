@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Visuelt Pro';
+  src: url("../../fonts/VisueltPro-Regular.ttf");
+  src: local('Visuelt Pro'), local('Visuelt-Regular'),
+  url('../../fonts/VisueltPro-Regular.woff2') format('woff2'),
+  url('../../fonts/VisueltPro-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Visuelt Pro';
+  src: url("../../fonts/VisueltPro-Medium.ttf");
+  src: local('Visuelt Pro Medium'), local('Visuelt-Medium'),
+  url("../../fonts/VisueltPro-Medium.ttf") format('truetype'),
+  url("../../fonts/VisueltPro-Medium.woff2") format('woff2');
+  font-weight: 500;
+}
+
+

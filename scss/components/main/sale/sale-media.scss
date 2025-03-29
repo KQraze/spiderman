@@ -1,0 +1,57 @@
+@include tablet {
+  .sale{
+    &-image {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    &-inner{
+      flex-direction: column;
+      gap: 0;
+
+      img{
+        width: 628px;
+        height: 640px;
+        align-self: center;
+      }
+    }
+    &-content{
+      margin-top: 0;
+    }
+  }
+}
+@include mobile {
+  .sale{
+    &-image {
+      min-height: 350px;
+    }
+    &-circle {
+      max-width: 270px;
+      max-height: 270px;
+    }
+    img{
+      width: 356px;
+      height: 363px;
+    }
+    &-image {
+      max-width: 300px;
+      margin: 0 auto;
+    }
+
+    form{
+      input{
+        font: $default-font-text-mobile;
+      }
+
+      button{
+        @include padding-button(10px,24px);
+        &:hover{
+          padding: 8px 24px 12px 24px;
+        }
+        &:active{
+          @include padding-button(10px,24px);
+        }
+      }
+    }
+
+  }
+}

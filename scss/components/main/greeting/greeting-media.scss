@@ -1,0 +1,56 @@
+@include tablet{
+  .greeting{
+
+    &-img{
+      align-self: center;
+      width: 608px;
+      height: 492px;
+    }
+
+    &-inner{
+      flex-direction: column;
+    }
+
+    &-warning{
+      margin-bottom: 0;
+    }
+    &-wheeldown{
+      display: none;
+    }
+  }
+}
+@include mobile {
+  .greeting{
+    background:
+            url("../../../../images/gradients/content-white.svg") top -59px left 20px no-repeat,
+            url("../../../../images/gradients/content-spots.svg") top 200px left -550px no-repeat,
+            url("../../../../images/gradients/content-circles.svg") top 200px right 32px no-repeat;
+
+    &-inner{
+      padding: 40px 0;
+    }
+    &-img{
+      width: 343px;
+      height: 288px;
+    }
+    &-warning{
+      margin-bottom: 40px;
+    }
+    form{
+      input{
+        font: $default-font-text-mobile;
+      }
+      button{
+        @extend .white-button;
+        @include padding-button(10px,24px);
+        &:hover{
+          padding: 8px 24px 12px 24px;
+        }
+        &:active{
+          @include padding-button(10px,24px);
+        }
+      }
+    }
+  }
+
+}

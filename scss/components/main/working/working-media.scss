@@ -1,0 +1,73 @@
+@include tablet{
+  .working{
+    background:
+            url("../../../../images/gradients/working-white.svg") bottom -250px right -180px no-repeat,
+            url("../../../../images/gradients/working-spots.svg") top 100px right -600px no-repeat,
+            url("../../../../images/gradients/working-circles.svg") top 535px right -150px no-repeat;
+
+    &-content{
+      flex-direction: column;
+      gap: 40px;
+    }
+    &-about{
+      margin-top: 40px;
+    }
+    img{
+      width: 608px;
+      align-self: center;
+    }
+    &-description{
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 40px;
+      max-width: none;
+    }
+  }
+}
+@include mobile {
+  .working{
+    &-inner{
+      gap: 24px;
+      padding: 40px 0;
+    }
+    &-about{
+      h3{
+        margin-bottom: 8px;
+      }
+    }
+    img{
+      width: 343px;
+    }
+    &-slider{
+      gap: 8px;
+      margin-bottom: 24px;
+      button{
+        font: $default-font-text-mobile;
+
+      }
+    }
+    &-dash{
+      width: 16px;
+    }
+    &-topic{
+      font: $default-font-medium-mobile;
+      margin-bottom: 16px;
+    }
+    &-description{
+      margin-bottom: 40px;
+      gap: 8px;
+      font: $default-font-text-mobile;
+    }
+    .working-button{
+      width: 100%;
+      @include padding-button(14px,24px);
+
+      &:hover{
+        padding: 12px 24px 16px 24px;
+      }
+      &:active{
+        @include padding-button(14px,24px);
+      }
+    }
+  }
+}

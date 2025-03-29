@@ -1,0 +1,19 @@
+@include tablet{
+  .advantages{
+    &-grid{
+      grid-template: repeat(3,1fr) / 1fr;
+    }
+  }
+}
+@include mobile {
+  .advantages{
+    &-inner {
+      padding: 40px 0;
+    }
+  }
+  .advantage{
+    &-description{
+      font: $default-font-text-mobile;
+    }
+  }
+}

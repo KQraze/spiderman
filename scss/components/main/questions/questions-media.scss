@@ -1,0 +1,38 @@
+@include tablet {
+  .questions{
+    background:
+            url("../../../../images/gradients/reviews-white.svg") top 70% right 50%  no-repeat,
+            url("../../../../images/gradients/reviews-spots__blue.svg") bottom -550px left -100px no-repeat,
+            url("../../../../images/gradients/reviews-spots.svg") top 0px right 0px no-repeat;
+    &-grid{
+      row-gap: 24px;
+    }
+  }
+}
+
+@include mobile {
+  .questions{
+    &-inner{
+      padding: 40px 0;
+    }
+    &-title {
+      margin-left: 20px;
+    }
+    &-grid{
+      margin: 0 8px;
+      row-gap: 16px;
+    }
+  }
+  .question{
+    &-topic{
+      padding:23px 24px 23px 16px;
+      img{
+        width: 32px;
+        height: 32px;
+      }
+    }
+    &-description{
+      font: $default-font-text-mobile;
+    }
+  }
+}
