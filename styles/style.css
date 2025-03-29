@@ -1,13 +1,13 @@
 @font-face {
   font-family: "Visuelt Pro";
-  src: url("../../fonts/VisueltPro-Regular.ttf");
-  src: local("Visuelt Pro"), local("Visuelt-Regular"), url("../../fonts/VisueltPro-Regular.woff2") format("woff2"), url("../../fonts/VisueltPro-Regular.ttf") format("truetype");
+  src: url("../fonts/VisueltPro-Regular.ttf");
+  src: local("Visuelt Pro"), local("Visuelt-Regular"), url("../fonts/VisueltPro-Regular.woff2") format("woff2"), url("../fonts/VisueltPro-Regular.ttf") format("truetype");
   font-weight: 400;
 }
 @font-face {
   font-family: "Visuelt Pro";
-  src: url("../../fonts/VisueltPro-Medium.ttf");
-  src: local("Visuelt Pro Medium"), local("Visuelt-Medium"), url("../../fonts/VisueltPro-Medium.ttf") format("truetype"), url("../../fonts/VisueltPro-Medium.woff2") format("woff2");
+  src: url("../fonts/VisueltPro-Medium.ttf");
+  src: local("Visuelt Pro Medium"), local("Visuelt-Medium"), url("../fonts/VisueltPro-Medium.ttf") format("truetype"), url("../fonts/VisueltPro-Medium.woff2") format("woff2");
   font-weight: 500;
 }
 * {
@@ -273,34 +273,34 @@ h4 {
 }
 @keyframes backgroundGreeting {
   0%, 100% {
-    background: url("../../images/gradients/content-white.svg") top -115px left 50px no-repeat, url("../../images/gradients/content-spots.svg") top 450px left -250px no-repeat, url("../../images/gradients/content-circles.svg") top 60px right 32px no-repeat;
+    background: url("../images/gradients/content-white.svg") top -115px left 50px no-repeat, url("../images/gradients/content-spots.svg") top 450px left -250px no-repeat, url("../images/gradients/content-circles.svg") top 60px right 32px no-repeat;
   }
   50% {
-    background: url("../../images/gradients/content-white.svg") top 5px left 30px no-repeat, url("../../images/gradients/content-spots.svg") top 450px left 250px no-repeat, url("../../images/gradients/content-circles.svg") top 10px right 200px no-repeat;
+    background: url("../images/gradients/content-white.svg") top 5px left 30px no-repeat, url("../images/gradients/content-spots.svg") top 450px left 250px no-repeat, url("../images/gradients/content-circles.svg") top 10px right 200px no-repeat;
   }
 }
 @keyframes backgroundWorking {
   0%, 100% {
-    background: url("../../images/gradients/working-white.svg") bottom -250px right -180px no-repeat, url("../../images/gradients/working-spots.svg") top -600px right -220px no-repeat, url("../../images/gradients/working-circles.svg") top 235px left -150px no-repeat;
+    background: url("../images/gradients/working-white.svg") bottom -250px right -180px no-repeat, url("../images/gradients/working-spots.svg") top -600px right -220px no-repeat, url("../images/gradients/working-circles.svg") top 235px left -150px no-repeat;
   }
   50% {
-    background: url("../../images/gradients/working-white.svg") bottom -50px right 50px no-repeat, url("../../images/gradients/working-spots.svg") top -400px right -200px no-repeat, url("../../images/gradients/working-circles.svg") top 135px left 150px no-repeat;
+    background: url("../images/gradients/working-white.svg") bottom -50px right 50px no-repeat, url("../images/gradients/working-spots.svg") top -400px right -200px no-repeat, url("../images/gradients/working-circles.svg") top 135px left 150px no-repeat;
   }
 }
 @keyframes backgroundReviews {
   0%, 100% {
-    background: url("../../images/gradients/reviews-white.svg") bottom -100px left -380px no-repeat, url("../../images/gradients/reviews-spots__blue.svg") bottom -300px right -420px no-repeat, url("../../images/gradients/reviews-spots.svg") top -450px right -100px no-repeat;
+    background: url("../images/gradients/reviews-white.svg") bottom -100px left -380px no-repeat, url("../images/gradients/reviews-spots__blue.svg") bottom -300px right -420px no-repeat, url("../images/gradients/reviews-spots.svg") top -450px right -100px no-repeat;
   }
   50% {
-    background: url("../../images/gradients/reviews-white.svg") bottom 100px left 80px no-repeat, url("../../images/gradients/reviews-spots__blue.svg") bottom -250px right -150px no-repeat, url("../../images/gradients/reviews-spots.svg") top -400px right 400px no-repeat;
+    background: url("../images/gradients/reviews-white.svg") bottom 100px left 80px no-repeat, url("../images/gradients/reviews-spots__blue.svg") bottom -250px right -150px no-repeat, url("../images/gradients/reviews-spots.svg") top -400px right 400px no-repeat;
   }
 }
 @keyframes backgroundQuestions {
   0%, 100% {
-    background: url("../../images/gradients/reviews-white.svg") top 0 left 0 no-repeat, url("../../images/gradients/reviews-spots__blue.svg") bottom -550px left -100px no-repeat, url("../../images/gradients/reviews-spots.svg") top -300px right -350px no-repeat;
+    background: url("../images/gradients/reviews-white.svg") top 0 left 0 no-repeat, url("../images/gradients/reviews-spots__blue.svg") bottom -550px left -100px no-repeat, url("../images/gradients/reviews-spots.svg") top -300px right -350px no-repeat;
   }
   50% {
-    background: url("../../images/gradients/reviews-white.svg") top -100px left 150px no-repeat, url("../../images/gradients/reviews-spots__blue.svg") bottom -350px left 300px no-repeat, url("../../images/gradients/reviews-spots.svg") top 300px right -350px no-repeat;
+    background: url("../images/gradients/reviews-white.svg") top -100px left 150px no-repeat, url("../images/gradients/reviews-spots__blue.svg") bottom -350px left 300px no-repeat, url("../images/gradients/reviews-spots.svg") top 300px right -350px no-repeat;
   }
 }
 .header {
@@ -585,7 +585,7 @@ h4 {
 }
 @media screen and (max-width: 670px) {
   .greeting {
-    background: url("../../../../images/gradients/content-white.svg") top -59px left 20px no-repeat, url("../../../../images/gradients/content-spots.svg") top 200px left -550px no-repeat, url("../../../../images/gradients/content-circles.svg") top 200px right 32px no-repeat;
+    background: url("../images/gradients/content-white.svg") top -59px left 20px no-repeat, url("../images/gradients/content-spots.svg") top 200px left -550px no-repeat, url("../images/gradients/content-circles.svg") top 200px right 32px no-repeat;
   }
   .greeting-inner {
     padding: 40px 0;
@@ -790,7 +790,7 @@ h4 {
 
 @media screen and (max-width: 1200px) {
   .working {
-    background: url("../../../../images/gradients/working-white.svg") bottom -250px right -180px no-repeat, url("../../../../images/gradients/working-spots.svg") top 100px right -600px no-repeat, url("../../../../images/gradients/working-circles.svg") top 535px right -150px no-repeat;
+    background: url("../images/gradients/working-white.svg") bottom -250px right -180px no-repeat, url("../images/gradients/working-spots.svg") top 100px right -600px no-repeat, url("../images/gradients/working-circles.svg") top 535px right -150px no-repeat;
   }
   .working-content {
     flex-direction: column;
@@ -1317,7 +1317,7 @@ h4 {
 
 @media screen and (max-width: 1200px) {
   .questions {
-    background: url("../../../../images/gradients/reviews-white.svg") top 70% right 50% no-repeat, url("../../../../images/gradients/reviews-spots__blue.svg") bottom -550px left -100px no-repeat, url("../../../../images/gradients/reviews-spots.svg") top 0px right 0px no-repeat;
+    background: url("../images/gradients/reviews-white.svg") top 70% right 50% no-repeat, url("../images/gradients/reviews-spots__blue.svg") bottom -550px left -100px no-repeat, url("../images/gradients/reviews-spots.svg") top 0px right 0px no-repeat;
   }
   .questions-grid {
     row-gap: 24px;
